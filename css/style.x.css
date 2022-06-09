@@ -1,0 +1,642 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  html {
+      font-size: 62.50%;
+      font-family: 'Lustria', serif;   
+  }
+
+
+  span #namelogo {
+    font-family: 'Racing Sans One', cursive;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+ 
+  header {
+      width: 100%;
+      height: 60px;
+  }
+
+
+  ul li {
+      display: inline-block;
+            
+  }
+ 
+  main {
+      width: 100%;
+  
+      
+  }
+
+  main section {
+      width: 60%;
+      float: left;
+  }
+ 
+  .products section {
+      float: left;
+      width: 33%;
+      
+  }
+
+  .vidBlog section {
+      float: left;
+      width: 50%;
+  }
+
+  .stylist {
+      float: left;
+  }
+ 
+  .teamCard {
+      float: left;
+  }
+
+
+  .offer section {
+      float: left;
+      width: 40%;
+  }
+ 
+  .lookBportfolio section {
+      float: left;
+      
+  }
+ 
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+
+
+  /*  NAV   */
+
+
+  header {
+      padding: 5px 0;
+      
+  }
+
+  nav a {
+      color: black;
+      text-decoration: none;
+      padding: 0 25px;
+      font-size: 1.3rem;
+      font-weight: bold;
+  }
+
+  li > img {
+      padding: 0 250px 0 150px;
+  }
+
+
+  .cart,.search {
+    padding: 0 20px;
+}
+
+  li .bookW {
+      padding: 0 70px;
+  }
+
+
+  /*   MAIN    */
+
+
+  main {
+      clear: both;
+      background: url(/img/Banner.jpg);
+      background-size: cover;
+      height: max-content;  
+
+      
+  }
+
+  main section {
+      margin: 0 10%;
+      margin-top: 150px;
+  }
+
+  h1 {
+      color: white;
+      font-size: 16rem;
+      text-shadow: 1px 1px darkgray;      
+
+  }    
+
+  h1 + span {
+      font-size: 2rem;
+      color: white;
+      text-shadow: 1px 1px darkgray;
+      
+  }
+
+  .book {
+      display: block;
+      background: black;
+      padding: 20px 50px;
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: none;
+      border-radius: 2px;
+      margin: 50px 0;
+      width: 220px;
+  }
+
+  main .notice {
+      width: 350px;
+      background: black;
+      height: 400px;
+      
+  }
+      
+  h5, h5 + p {
+      color: white;
+      font-size: 1.6rem;
+      padding: 0 40px;
+      margin-top: 20px;
+      line-height: 1.8;
+    
+    }
+
+  h5 {
+      padding-top: 50px;
+      border-left: 7px solid white;
+  }
+
+  strong {
+      font-size: 5rem;
+      font-weight: bold;
+  }
+
+  main section + section .book {
+      position: relative;
+      top: -50px;
+      background: white;
+      color: black;
+      margin-left: 40px;
+      
+  }
+
+  .openingTimes {
+      transform: rotate(90deg);
+      font-size: 3rem;
+      color: white;
+      position: relative;
+      top: -400px;
+      right: -58.5%;
+
+  }
+
+/*  Section - products */
+
+.products {
+    clear: both;
+    height: max-content;
+    margin: 0 10%;
+    padding: 70px;
+   
+}
+
+.Hicon {
+    padding-left: 33%;
+}
+
+h4, h4 + p {
+    margin: 0 5%;
+    width: 70%;
+    text-align: center;
+}
+
+
+h4 {
+    font-size: 2rem;
+    margin: 5%;
+   
+}
+
+h4 + p,h2 + p {
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 70%;
+}
+
+
+/* Vidblog Section */
+
+.vidBlog {
+    background: RGB(243, 244, 246);
+    height: max-content;
+    
+}
+
+.vidBlog section {
+    padding: 70px 10%;
+}
+
+h2 {
+    font-size: 6rem;
+    padding-bottom: 30px;
+
+}
+
+.hairVid {
+    float: right;
+}
+
+
+/* team Section */
+
+.team {
+    margin: 70px 22%;
+    height: max-content;
+    width: 100%;
+}
+
+.stylist {
+    padding: 25px;
+    height: 400px;
+    width: auto;
+}
+
+.teamCard {
+    clear: both;
+    width: 100%;
+    
+}
+
+#nameCard {
+    text-align: center;
+    float: left;
+    background: black;
+    color: white;
+    padding: 25px 35px;
+    margin: 45px;
+    position: relative;
+    top: -100px;
+    border-radius: 2px;
+    
+}
+
+#nameCard a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#nameCard span {
+    display: block;
+}
+
+
+/* offer section */
+
+
+.offer {
+    background: RGB(241, 239, 240);
+    height: 410px;
+    margin: 0 10%;
+    
+}
+
+.bannerImg {
+    float: right;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 90px;
+    padding-left: 70px;
+ 
+}
+
+h3 + p {
+    font-size: 4rem;
+    padding-left: 70px;
+}
+
+.offer section .book {
+    margin-left: 70px;
+    width: 300px;
+}
+
+
+/* LookBook */
+
+
+
+.lookB {
+    clear: both;
+    margin: 70px 10%;
+        
+}
+
+.lookB > h2 {
+    text-align: center;
+}
+
+.lookBportfolio {
+    margin: 0 10%;
+}
+
+.lookBportfolio section {
+    float: left;
+    width: 33%;    
+}
+
+.column img {
+    padding: 3%;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+
+
+    header {
+        height: max-content;
+        width: 100%;
+
+    }
+
+    ul li {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    /* main section */
+
+
+    main {
+        width: 100%;
+        background-image: url(/img/BannerMobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    main section {
+        width: 100%;
+        margin: 0 0;        
+               
+    }
+
+    main section + section {
+        width: 100%;
+    }
+
+    main .openingTimes{
+        transform: none;
+        position: unset;
+        text-align: center;       
+
+    }
+
+    .openingTimes span {
+        font-size: 2rem;
+        padding: 0 0;
+    }
+
+    h1 {
+        font-size: 5rem;
+        
+    }
+
+    h1 + span {
+        font-size: 1.3rem;
+       
+    }
+
+
+    main .notice {
+        width: 100%;
+        
+    }
+
+
+    /*product section */
+
+    .products {
+        width: 100%;
+        padding: none;
+        margin: none;
+    }
+
+    .products section {
+        width: 100%;
+    }
+
+    .products p {
+        width: 100%;
+        margin: none;
+    }
+
+    .Hicon {
+        padding: none;
+        margin: none;
+    }
+
+
+    /* vidblog section */
+
+
+    .vidBlog {
+        width: 100%;
+    }
+
+    .vidBlog section {
+        width: 100%;
+    }
+
+    .vidBlog h2 {
+        font-size: 3rem;
+    }
+
+
+    .hairVid {
+        width: 100%;
+        padding:none;
+    }
+
+
+
+    /* team section */
+
+    .team {
+        width: 100%;
+        height: max-content;
+    }
+
+    #nameCard {
+        margin: 200px 0;
+        position: relative;
+        top: -1240px;
+        width: 100%;
+        
+    }
+
+    .stylist2 {
+        margin-top: 80px;
+
+    }
+
+    .stylist3 {
+        margin-top: 80px;
+    }
+
+
+    /* offer section */
+
+    
+    .offer {
+        background: RGB(241, 239, 240);
+        height: max-content;
+        margin: 0;
+        padding-top: 20px;
+        
+    }
+
+    .offer > section {
+        width: 100%;
+    }
+    
+    .bannerImg {
+        display: blockS;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        margin-top: 0;
+        padding-left: 0;
+     
+    }
+    
+    h3 + p {
+        font-size: 4rem;
+        padding-left: 0;
+    }
+    
+    .offer section .book {
+        margin-left: 70px;
+        width: 100%;
+    }
+    
+
+
+
+
+
+    /* lookbook section */
+
+    .lookB {
+        width: 100%;
+        clear: both;
+        margin: 20px 0;
+            
+    }
+    
+    .lookB > h2 {
+        text-align: left;
+    }
+    
+    .lookBportfolio {
+        margin: 0;
+    }
+    
+    .column img {
+        width: 100%;
+        padding: 3%;
+    }
+
+
+
+
+
+
+
+}
