@@ -46,9 +46,15 @@ h2 {
      margin: 30px;
 }
 
+h3 {
+     font-size: 3.8rem;
+     text-align: center;
+     margin: 30px;
+}
+
+
 h4 {
      font-size: 1.8rem;
-     font-weight: bold;
      text-align: center;
      padding-top: 10px;
 }
@@ -85,6 +91,11 @@ main {
                  inset 0px 4.3px 15.7px -11px rgba(0, 0, 0, 0.041),
                  inset 0px 32px 24px -11px rgba(0, 0, 0, 0.15);   
 
+}
+
+p {
+     line-height: 1.8;
+     text-align: center;
 }
 
 .wrapper-two p {
@@ -138,7 +149,7 @@ main div section {
 }
 
 .wrapper {
-     margin: 80px 5%;
+     padding: 80px 5%;
 }
 
 
@@ -152,10 +163,20 @@ main div section {
      align-content: space-around;
 }
 
-.wrapper-two {
+.wrapper-two, .wrapper-four {
      flex-direction: column;
      text-align: center;
      margin-top: 100px;
+}
+
+
+.team-container {
+     justify-content: space-around;
+
+}
+
+.wrapper-three {
+     flex-direction: column;
 }
 
 
@@ -169,24 +190,35 @@ main div section {
 .responsive {
      width: 100%;
      height: auto;
-     max-width: 1300px;
+     max-width: 1200px;
    }
 
 .icon {
      margin: 30px;
 }
 
-.feature-img {
-     box-shadow: 0.7px 2px 1px rgba(0, 0, 0, 0.028),
-                 2.5px 6.7px 3.4px rgba(0, 0, 0, 0.042),
-                 11px 30px 15px rgba(0, 0, 0, 0.07);
+.feature-img, .adbanner {
+     box-shadow: 5.3px 7.8px 3.4px rgba(0, 0, 0, 0.054),
+                 10.6px 15.5px 11.4px rgba(0, 0, 0, 0.079),
+                  26px 38px 51px rgba(0, 0, 0, 0.24);
 }
 
 .team {
      box-shadow: 0px 1.1px 1px rgba(0, 0, 0, 0.028),
                  0px 3.8px 3.4px rgba(0, 0, 0, 0.042),
                  0px 17px 15px rgba(0, 0, 0, 0.07);
+     margin: 30px;
 }
+
+article {
+     background: url(/img/adbanner.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-color: #f0f1f3;
+     height: 400px;
+     box-shadow: 3px 3px 10px black;
+}
+
 
 /* ---------- nav --------------*/
 
@@ -270,10 +302,22 @@ a:visited {
      padding-top: 15px;
 }
 
+.btn.card {
+     margin: 0;
+     position: relative;
+     top: -60px;
+     width: 200px;
+     height: 70px;
+}
+
 .btn:visited {
      color: white;
 }
 
+.card span {
+     display: block;
+     line-height: 2rem;
+}
 
 .flip {
      color: white;
@@ -304,6 +348,27 @@ a:visited {
 
 /* ----------- wrapper-two -------------*/
 
+.wrapper-two {
+     background-color: #dbdbdb;
+     line-height: 3rem;
+}
+
 .wrapper-two .btn {
+     background-color: black;
      margin: 50px auto;
+     padding-top: 18px;
+     
+}
+
+
+
+/* ----------- wrapper-three -------------*/
+
+
+
+
+/* ----------- wrapper-four -------------*/
+
+.wrapper-four {
+     margin: 0;
 }
