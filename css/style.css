@@ -87,9 +87,12 @@ main {
      background-position-y: top;
      background-position-x: center;
      height: 100vh;
-     box-shadow: inset 0px -0.4px 14.8px -11px rgba(0, 0, 0, 0.001),
-                 inset 0px 4.3px 15.7px -11px rgba(0, 0, 0, 0.041),
-                 inset 0px 32px 24px -11px rgba(0, 0, 0, 0.15);   
+     box-shadow: inset 0px 2.7px 1.8px rgba(0, 0, 0, 0.021),
+                 inset 0px 4.9px 4.4px rgba(0, 0, 0, 0.032),
+                 inset 0px 7.3px 8.3px rgba(0, 0, 0, 0.041),
+                 inset 0px 10.3px 14.7px rgba(0, 0, 0, 0.051),
+                 inset 0px 14.5px 27.6px rgba(0, 0, 0, 0.063),
+                 inset 0px 20px 66px rgba(0, 0, 0, 0.09);  
 
 }
 
@@ -103,6 +106,16 @@ p {
      padding: 30px 20%;
 }
 
+footer {
+     background-color:#dbdbdb;
+     height: 300px;
+     box-shadow: inset 0px 2.7px 1.8px rgba(0, 0, 0, 0.021),
+                 inset 0px 4.9px 4.4px rgba(0, 0, 0, 0.032),
+                 inset 0px 7.3px 8.3px rgba(0, 0, 0, 0.041),
+                 inset 0px 10.3px 14.7px rgba(0, 0, 0, 0.051),
+                 inset 0px 14.5px 27.6px rgba(0, 0, 0, 0.063),
+                 inset 0px 20px 66px rgba(0, 0, 0, 0.09);
+}
 
 /******************************************
 /* LAYOUT
@@ -180,6 +193,11 @@ main div section {
 }
 
 
+.wrapper-five .container {
+     justify-content: center;
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -215,10 +233,20 @@ article {
      background-repeat: no-repeat;
      background-position: center;
      background-color: #f0f1f3;
-     height: 400px;
-     box-shadow: 3px 3px 10px black;
+     height: 500px;
+     box-shadow: inset 0px 2.7px 1.8px rgba(0, 0, 0, 0.021),
+                 inset 0px 4.9px 4.4px rgba(0, 0, 0, 0.032),
+                 inset 0px 7.3px 8.3px rgba(0, 0, 0, 0.041),
+                 inset 0px 10.3px 14.7px rgba(0, 0, 0, 0.051),
+                 inset 0px 14.5px 27.6px rgba(0, 0, 0, 0.063),
+                 inset 0px 20px 66px rgba(0, 0, 0, 0.09);
 }
 
+
+.wrapper-five img {
+     margin: 7px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.545);
+}
 
 /* ---------- nav --------------*/
 
@@ -298,6 +326,11 @@ a:visited {
      margin: 50px;
 }
 
+.btn-four {
+     margin: 40px auto;
+     width: 200px;
+}
+
 .btn-two,a {
      padding-top: 15px;
 }
@@ -351,6 +384,12 @@ a:visited {
 .wrapper-two {
      background-color: #dbdbdb;
      line-height: 3rem;
+     box-shadow: inset 0px 2.7px 1.8px rgba(0, 0, 0, 0.021),
+                 inset 0px 4.9px 4.4px rgba(0, 0, 0, 0.032),
+                 inset 0px 7.3px 8.3px rgba(0, 0, 0, 0.041),
+                 inset 0px 10.3px 14.7px rgba(0, 0, 0, 0.051),
+                 inset 0px 14.5px 27.6px rgba(0, 0, 0, 0.063),
+                 inset 0px 20px 66px rgba(0, 0, 0, 0.09);
 }
 
 .wrapper-two .btn {
@@ -371,4 +410,23 @@ a:visited {
 
 .wrapper-four {
      margin: 0;
+     
 }
+
+.banner-text {
+     width: 50%;
+     padding-top: 50px;
+     padding-bottom: 50px;     
+}
+
+/* ----------- wrapper-five -------------*/
+
+.wrapper-five {
+     text-align: center;
+     margin-bottom: 100px;
+}
+
+.wrapper-five h2 {
+     margin-bottom: 80px;
+}
+
