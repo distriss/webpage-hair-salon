@@ -143,10 +143,12 @@ header {
 }
 
 main div {
-     padding: 200px 5%;
-     padding-right: 2%;
+     margin: 200px 5%;
+     margin-right: 2%;
+     flex-direction: row;
      flex-wrap: wrap; 
-     justify-content:flex-end;   
+     justify-content: space-between;
+     align-items: center; 
 }
 
 main div section {
@@ -247,6 +249,7 @@ article {
      margin: 7px;
      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.545);
 }
+
 
 /* ---------- nav --------------*/
 
@@ -430,3 +433,90 @@ a:visited {
      margin-bottom: 80px;
 }
 
+
+/* ---------------- responsive ------------------------------ */
+
+@media only screen and (max-width: 1560px ) {
+
+     h1 {
+          font-size: 14rem;
+     }
+}
+
+
+@media only screen and (max-width: 1420px ) {
+
+     /* main.container {
+          flex-direction: column;
+          align-items:flex-start;
+     } */
+     
+     h1 {
+          font-size: 12rem;
+     }
+
+}
+
+
+@media only screen and (max-width: 1320px ) {
+
+     h1 {
+          font-size: 10rem;
+     }
+
+     h2 {
+          font-size: 3rem;         
+     }
+
+     h3 {
+          font-size: 2rem;
+          margin: 30px;
+     }
+
+
+     h4 {
+          font-size: 1.8rem;
+          padding-top: 10px;
+     }
+
+     h5 {
+          font-size: 1.7rem;
+          font-weight: bold;
+          margin-bottom: 15px;
+     }
+
+     strong {
+          font-size: 2rem;
+     }
+     p {
+          font-size: 1.5rem;
+     }
+
+     .flip {
+          font-size: 3rem;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+}
