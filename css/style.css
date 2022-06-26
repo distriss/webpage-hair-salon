@@ -138,29 +138,38 @@ header {
      
 }
 
+
+
 .container {
      display: flex;
+     flex-wrap: wrap;
 }
 
-main div {
-     margin: 200px 5%;
-     margin-right: 2%;
+main section.container {
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: nowrap;
+}
+
+main div {     
+     margin-top: 100px;
+     margin-bottom: 100px;
+     margin-inline: 20px;
      flex-direction: row;
      flex-wrap: wrap; 
-     justify-content: space-between;
-     align-items: center; 
+
 }
 
-main div section {
+.h1-container {
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
 }
 
+
 .main-div-two {
      display: flex;
-     flex-direction: column;
-     align-content: space-around;;
+     flex-direction: row-reverse;
 }
 
 .wrapper {
@@ -285,7 +294,7 @@ a:visited {
      height: 370px;
      padding: 45px;
      line-height: 2;
-     margin-right: 100px;
+     margin-right: 60px;
      box-shadow: 6.4px 8px 9.4px -11px rgba(0, 0, 0, 0.064),
                  10.9px 13.5px 11.3px -11px rgba(0, 0, 0, 0.285),
                  15.5px 19.2px 11px -11px rgba(0, 0, 0, 0.545),
@@ -338,8 +347,8 @@ a:visited {
      padding-top: 15px;
 }
 
-.btn.card {
-     margin: 0;
+.btn-two.card {
+     margin: auto;
      position: relative;
      top: -60px;
      width: 200px;
@@ -446,10 +455,6 @@ a:visited {
 
 @media only screen and (max-width: 1420px ) {
 
-     /* main.container {
-          flex-direction: column;
-          align-items:flex-start;
-     } */
      
      h1 {
           font-size: 12rem;
@@ -497,14 +502,21 @@ a:visited {
      }
 
 
+     main {
+          flex-direction: column;
+          height: fit-content;
+     }
 
 
+     main div {
+          margin-top: 100px;
+          margin-bottom: 100px;
+     }
 
 
+     .wrapper-one {
 
-
-
-
+     }
 
 
 
@@ -519,4 +531,14 @@ a:visited {
 
 
      
+}
+
+
+
+@media only screen and (max-width: 700px ) {
+
+     h1 {
+          font-size: 7rem;
+     }
+
 }
