@@ -4,163 +4,165 @@
   	    <meta charset="utf-8">
   	    <meta name="description" content="Your description goes here">
   	    <meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
 		
-		<title>Ayesha - Hair Salon</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Racing+Sans+One&display=swap" rel="stylesheet">
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="/css/reset.css">
 		<link rel="stylesheet" href="/css/style.css">
+        <title>Ayesha. - Hair Salon</title>
 	</head>
 	<body>
         <header>
             <nav>                
-                <ul class="nav">
-                    <li><a href="#" class="logo">Ayesha.</a></li>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">LOOKBOOK</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a class="search" href="#"><img class="navIcon" src="/img/search.png"></a></li>
-                    <li><a class="cart" href="#"><img class="navIcon" src="/img/cart.png"></a></li>
-                    <li><a class="bookW" href="#">- BOOK ONLINE</a></li>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="#home" class="logo">Ayesha.</a></li>
+                    <li class="nav-link"><a href="#home">HOME</a></li>
+                    <li class="nav-link"><a href="#">ABOUT</a></li>
+                    <li class="nav-link"><a href="#features">SERVICES</a></li>
+                    <li class="nav-link"><a href="#lookbook">LOOKBOOK</a></li>
+                    <li class="nav-link"><a href="#">CONTACT</a></li>
+                    <li class="nav-link">
+                        <a class="search" href="#">
+                            <img class="icons" src="/img/search.png">
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="cart" href="#">
+                            <img class="icons" src="/img/cart.png">
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="bookW" href="#">- BOOK ONLINE</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="container">
-                <div>
-                    <section class="h1-container">
-                        <h1>BLONDE, COLOUR & HIGHLIGHT</h1>
-                        <span>FALL IN LOVE WITH YOUR HAIR!</span>
-                        <a class="btn" href="#">- OUR SERVICES</a>                
-                    </section>
+            <section id="home" class="main">
+                <div class="main-banner-image">
+                    <img src="./img/banner.jpg" alt="woman with pink hair and blue eyeshadow" />
                 </div>
-                <div class="main-div-two">
-                    <section class="notice">
+                <div class="main-text">
+                    <div class="main-text-box">
+                        <h1 class="main-title">BLONDE, <br/>& HIGHLIGHT</h1>
+                        <span class="main-span">DIVIDE YOUR UNIQUENESS BY YOUR HAIR IN STYLE</span>
+                        <a class="main-btn" href="#">- OUR SERVICES</a>
+                    </div>     
+                    <div class="discount-box">
                         <h5>YOUR FIRST VISIT ?</h5>
-                        <p><strong>-20%</strong> FOR THE FIRST CLASSIC HAIR COLORING</p>
-                        <a class="btn btn-two" href="#">- BOOK ONLINE</a>
-                    </section>
-                    <section>
-                        <span class="flip">MON - SUN: 9:00AM - 8:PM</span>
-                    </section>      
+                        <p><span class="discount">-20%</span> FOR THE FIRST CLASSIC HAIR COLORING</p>
+                        <a class="discount-btn" href="#">- BOOK ONLINE</a>
+                    </div>
                 </div>
-            </section>           
+                <div class="main-flip-box">
+                    <span>MON - SUN: 9:00AM - 8:PM</span>                
+                </div>
+            </section>  
         </main>
         <!--------------------------------------------------------->
-        <section class="wrapper wrapper-one container">
-            <section class="sub-container icon">
-                <img class="icon" src="/img/salonicon01.png" width="200"> <!-- Icon made by Freepik from www.flaticon.com -->
-                <h4>EXPERT BEAUTICIANS</h4>
-                <p>Beauty Experts Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit, aut doloribus quis velit recusandae quibusdam eligendi blanditiis beatae.</p>
+        <div class="container">
+            <section class="features fadein-top" id="features">
+                <div class="features-box">
+                    <div class="features-box-item">
+                        <img src="/img/salonicon01.png" width="200"> <!-- Icon made by Freepik from www.flaticon.com -->
+                        <h4 class="feature-name">EXPERT BEAUTICIANS</h4>
+                        <p>Beauty Experts Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit, aut doloribus.</p>
+                    </div>
+                    <div class="features-box-item">
+                        <img src="/img/salonicon02.png" width="200"> <!-- Icon made by Good Ware from www.flaticon.com -->
+                        <h4 class="feature-name">QUALITY SERVICES</h4>
+                        <p>Hair Styling Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit.</p>
+                    </div>
+                    <div class="features-box-item">
+                        <img  src="/img/salonicon03.png" width="200"> <!-- Icon made by Nadiinko from www.flaticon.com -->
+                        <h4 class="feature-name">BEAUTY PRODUCTS</h4>
+                        <p>Hair color or Products Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit, aut doloribus quis velit.</p>
+                    </div>
+                </div>
             </section>
-            <section class="sub-container icon">
-                <img class="icon" src="/img/salonicon02.png" width="200"> <!-- Icon made by Good Ware from www.flaticon.com -->
-                <h4>QUALITY SERVICES</h4>
-                <p>Hair Styling Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit, aut doloribus quis velit recusandae quibusdam eligendi blanditiis.</p>
-            </section>
-            <section class="sub-container icon">
-                <img class="icon" src="/img/salonicon03.png" width="200"> <!-- Icon made by Nadiinko from www.flaticon.com -->
-                <h4>BEAUTY PRODUCTS</h4>
-                <p>Hair color or Products Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit, aut doloribus quis velit recusandae quibusdam eligendi blanditiis beatae.</p>
-            </section>
-        </section>
+        
          <!--------------------------------------------------------->
-        <section class="wrapper wrapper-two container">
-            <section class="sub-container">
-                <h2>MAKE YOUR OWN MOMENTUM</h2>
-                <p>Hair Salon Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint. Similique illo corrupti suscipit nihil ab maxime omnis saepe quas deserunt quibusdam laborum ut velit rem sunt, dicta minima eveniet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis velit eos sint voluptates ipsa. Sint consequatur aperiam sit molestias illo earum? Fugiat tempora quae, aliquam quod.</p>
-                <a class="btn btn-two" href="#">- READ MORE</a>
-            </section>            
+         <section class="banner fadein-right" id="banner">
+            <div class="banner-text">
+                <h2 class="banner-title">MAKE YOUR OWN MOMENTUM</h2>
+                <p class="banner-desc">Hair Salon Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint. Similique illo corrupti suscipit nihil ab maxime omnis saepe quas deserunt quibusdam laborum ut velit rem sunt, dibanner minima eveniet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus nobis velit eos sint voluptates ipsa. Sint consequatur aperiam sit molestias illo earum? Fugiat tempora quae, aliquam quod.</p>
+                <a class="main-btn" href="#">- READ MORE</a>
+            </div> 
+            <div class="banner-image">  
+                <img class="banner-img" src="/img/salon.jpg" alt="Image of the Hair Salon interior" width="1000">
+            </div>         
         </section>
-        <section class="wrapper wrapper-four container">
-            <h3>OUR SALON</h3>
-            <section>
-                <img class="feature-img responsive" src="/img/salon.jpg" alt="Image of the Hair Salon interior" width="1000">
-            </section>
-        </section>    
-        <section class="wrapper wrapper-three container">
-            <div>
-                <h3>OUR TEAM OF STYLISTS</h3>
-            </div>          
-            <section class="sub-container">
-                <section class="container team-container">
-                    <section>
-                        <img class="team" src="/img/stylist01.jpg" alt="Ayesha Smith" width="250">
-                        <section class="btn btn-two card">
-                            <span>AYESHA SMITH</span>
-                            <span>- STYLER</span>
-                        </section>
-                    </section>
-                    <section>
-                        <img class="team" src="/img/stylist02.jpg" alt="Leon Williams" width="250">
-                        <section class="btn btn-two card">
-                            <span>LEON WILLIAMS</span> 
-                            <span>- COLOURIST</span>
-                        </section>
-                    </section>
-                    <section>
-                        <img class="team" src="/img/stylist03.jpg" alt="Michelle Lake" width="250">
-                        <section class="btn btn-two card">
-                            <span>MICHELLE LAKE</span> 
-                            <span>- BEAUTICIAN</span>            
-                        </section>
-                    </section>             
-                    
-                    
-                </section>
-                <section class="container team-container">                    
-                                        
-                                        
-                    
-                </section>
-            </section>
-        </section>
-        <section class="banner">
-            <article>
-                <div class="banner-text sub-container">
-                    <h3>COLOUR DAY OFFER!</h3>
-                    <p><strong>-10%</strong> ON HAIRCUT, COLOR AND HIGHLIGHTS</p>
-                    <a class="btn btn-four" href="#">- BOOK APPOINTMENT</a>
-                </div>               
-            </article>
-        </section>
-        <section class="wrapper wrapper-five">
-            <div>
-                <h2>OUR LOOKBOOK</h2>
+        <section class="team fadein-top" id="team">            
+            <div class="team-member">
+                <div class="team-member-image">
+                    <img src="/img/stylist01.jpg" alt="Ayesha Smith" width="250">
+                </div>
+                <div class="team-member-text">
+                    <span>AYESHA SMITH</span>
+                    <span>- STYLER</span>
+                </div>
             </div>
-            <section class="container">
-                <section class="sub-container col col-1">
-                    <img src="/img/lookbook01.jpg" alt="Natural Blonde with Highlights" width="250">
-                    <img src="/img/lookbook02.jpg" alt="Wavy Pastelle Violet" width="250">
-                    <img src="/img/lookbook03.jpg" alt="Natural Blonde Silver Highlights" width="250">
-                </section>
-                <section class="sub-container col col-2">
-                    <img src="/img/lookbook04.jpg" alt="Bleach Blonde Shoulder Cut" width="250">
-                    <img src="/img/lookbook05.jpg" alt="Purple Balayage" width="250">
-                    <img src="/img/lookbook06.jpg" alt="Honey Balayage on Dark Roots" width="250"> 
-                </section>
-                <section class="sub-container col col-3">
-                    <img src="/img/lookbook07.jpg" alt="Chocolate Brown Wave with Hightlights" width="250">
-                    <img src="/img/lookbook08.jpg" alt="Go Natural Curls Cut" width="250">
-                    <img src="/img/lookbook09.jpg" alt="Blonde Lengths" width="250">
-                </section>
-                <section class="sub-container col col-3">
-                    <img src="/img/lookbook10.jpg" alt="Summer Highlights" width="250">
-                    <img src="/img/lookbook11.jpg" alt="Long-Bob" width="250">
-                    <img src="/img/lookbook12.jpg" alt="Wedding Hair" width="250">
-                </section>
-            </section>
+            <div class="team-member">
+                <div class="team-member-image">
+                    <img src="/img/stylist02.jpg" alt="Leon Williams" width="250">
+                </div>
+                <div class="team-member-text">
+                    <span>LEON WILLIAMS</span> 
+                    <span>- COLOURIST</span>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-member-image">
+                    <img src="/img/stylist03.jpg" alt="Michelle Lake" width="250">
+                </div>
+                <div class="team-member-text">
+                    <span>MICHELLE LAKE</span> 
+                    <span>- BEAUTICIAN</span>  
+                </div>
+            </div>
         </section>
+        
+        <section class="adbanner fadein-left" id="adbanner">
+            <div class="adbanner-text">
+              <p class="adbanner-span">Colour day offer!</p>
+              <p class="adbanner-title">
+                <span class="discount"> -10% </span> On Haircut <br />
+                color and highlight
+              </p>
+              <a href="" class="main-btn">- Book Appointment</a>
+            </div>
+            <div class="adbanner-image">
+              <img src="./img/adbanner.png" alt="" />
+            </div>
+        </section>
+
+        <section class="look-book fadein-top" id="lookbook">
+            <div>
+                <h2 class="lookbook-title">OUR LOOKBOOK</h2>
+            </div>
+            <div class="lookbook-images">
+              <div class="col-1">
+                <img src="./img/lookbook01.jpg" alt="" />
+                <img src="/img/lookbook02.jpg" alt="" />
+              </div>
+              <div class="col-2">
+                <img src="./img/lookbook03.jpg" alt="" />
+                <img src="./img/lookbook04.jpg" alt="" />
+              </div>
+              <div class="col-3">
+                <img src="./img/lookbook05.jpg" alt="" />
+                <img src="./img/lookbook06.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+
         <footer class="wrapper">
 
         </footer>
-    
-
-		<script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
