@@ -11,6 +11,10 @@
     scroll-behavior: smooth;
   }
 
+  html {
+    font-size: 16px;
+  }
+
   body {
       font-size: 1rem;
       font-family: 'Lustria', serif;
@@ -26,7 +30,6 @@
 
   h2 {
     font-size: 4rem;
-    margin: 30px;
   }
 
   h3 {
@@ -136,8 +139,9 @@
   }
   
   .main img {
-    width: 100%;
-    height: 125vh;
+    max-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
     border-bottom-right-radius: 12%;
     z-index: -1;
@@ -191,12 +195,13 @@
     display: block;
     text-decoration: none;
     margin-top: 1rem;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     background-color: black;
     color: #ddd;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.545);
     align-self: flex-start;
     text-transform: uppercase;
+    text-wrap: nowrap;
     animation: fadeIn 3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
@@ -266,6 +271,7 @@
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.545);
     align-self: flex-start;
     text-transform: uppercase;
+    text-wrap: nowrap;
     animation: fadeIn 3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
@@ -354,7 +360,6 @@
   }
   
   .banner-text {
-    width: 100%;
     display: flex;
     padding-right: 3.2rem;
     flex-direction: column;
@@ -397,18 +402,22 @@
   .team {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 8.2rem;
   }
   
   .team-member {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
+    margin-bottom: 3rem;
     width: 30%;
   }
   
   .team-member-image {
-    width: 100%;
+    min-width: 30%;
   }
   
   .team-member-image img {
@@ -420,15 +429,17 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    width: 80%;
+    width: fit-content;
     align-self: center;
     position: absolute;
     background-color: white;
     bottom: -5%;
     color: black;
     text-align: center;
+    text-wrap: nowrap;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-inline: 1.5rem;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.267));
   }
   
@@ -448,12 +459,9 @@
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(90deg, #ffffff, #f3f3f3);
-    position: relative;
-    overflow: hidden;
   }
   
   .adbanner-text {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -481,14 +489,11 @@
   }
   
   .adbanner-image img {
-    width: 40%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    width: 100%;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.267));
   }
   
-  .look-book {
+  .lookbook {
     margin-top: 6.8rem;
     display: flex;
     flex-direction: column;
@@ -500,6 +505,7 @@
   .lookbook-title {
     font-size: 2.5rem;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 2.4rem;
     position: relative;
   }
@@ -520,11 +526,10 @@
   
   .lookbook-images {
     display: flex;
-    width: 52%;
+    width: 40%;
     gap: 1rem;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 3.8rem;
     padding-bottom: 4.2rem;
     
   }
@@ -561,13 +566,7 @@
     flex-direction: column;
     gap: 1.2rem;
   }
-  
-  @media screen and (max-width: 769px) {
-  }
-  
-  @media screen and (max-width: 421px) {
-  }
-  
+    
   .fadein-top {
     opacity: 0;
     transform: translateY(-100px);
@@ -599,4 +598,151 @@
   .fadein-left.active {
       transform: translateX(0);
       opacity: 1;
+  }
+
+  @media screen and (max-width: 1250px) {
+
+    .main-title {
+      font-size: 6rem;
+    }
+
+    .main img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+      border-bottom-right-radius: 15% 20%;
+    }
+
+    .features-box-item {
+      margin-inline: 1.5rem;
+    }
+
+    .banner {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 8.2rem;
+    }
+
+    .banner-text {
+      margin-bottom: 2rem;
+    }
+
+    .adbanner {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .adbanner-text {
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+
+    .adbanner-image img {
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 980px) {
+
+    .main-title {
+      font-size: 5rem;
+    }
+
+    .main-text {
+      padding-left: 6rem;
+    }
+
+    .main img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+      border-bottom-right-radius: 30% 20%;
+    }
+
+    .features-box-item {
+      margin-inline: 1rem;
+    }
+
+
+    .team-member {
+      margin-inline: 3rem;
+    }
+
+    .team-member-image {
+      min-width: 250px;      
+    }
+
+
+  }
+
+  @media screen and (max-width: 769px) {
+
+    .main-title {
+      font-size: 3.8rem;
+    }
+
+    .main-span {
+      font-size: 1rem;
+    }
+
+    .main-text {
+      padding-left: 4rem;
+    }
+
+    .banner-title {
+      font-size: 2.2rem;
+    }
+
+    .adbanner-text .adbanner-title {
+      font-size: 2rem;
+    }
+    .lookbook-title {
+      font-size: 2.3rem;
+    }
+
+    .main img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+      border-bottom-right-radius: 45% 20%;
+    }
+
+    .team {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8.2rem;
+    }
+
+    .team-member-image {
+      min-width: 275px;
+    }
+
+    .features-box {
+      flex-direction: column;
+    }
+
+    .features-box-item {
+      margin-inline: 0;
+    }
+
+  }
+  
+  @media screen and (max-width: 421px) {
+
+    .main-title {
+      font-size: 2.8rem;
+    }
+
+    .main-span {
+       font-size: 0.8rem;
+    }
+
+    .main-text {
+      padding-left: 1rem;
+    }
+
+
+    .main img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+      border-bottom-right-radius: 50% 20%;
+    }
+
   }
