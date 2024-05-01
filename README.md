@@ -1,4 +1,4 @@
-# My Awesome Project
+# About Project
 Hair Salon Website created based on a Wireframe Design
 
 ## How It's Made:
