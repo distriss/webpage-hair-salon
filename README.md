@@ -7,7 +7,7 @@ Hair Salon Website created based on a Wireframe Design
 ## Things to add
 Hamburger menu 
 
-[Live Version](https://663140809a01dd0c53e9856a--bright-sunflower-dcb81b.netlify.app/)
+[Live Version](https://bright-sunflower-dcb81b.netlify.app/)
 
 ### Wireframe
 ![Wireframe](https://raw.githubusercontent.com/distriss/webpage-hair-salon/main/wireframe/hair-salon-ajmal-khan.webp)
